@@ -1,0 +1,135 @@
+html{
+  height: 100%;
+}
+
+body{
+
+  background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('main.jpg');
+background-size: cover;
+
+ }
+
+
+ .change{
+   margin-top: 20px;
+ padding-left: 40px;
+ padding-top: 25px;
+  width: 200px; height: 200px;
+  color: #b6cec7;
+  font-family: 'Cinzel', serif;
+  display: flex;
+  justify-content: left; align-items: center;
+ }
+
+ .heading{
+   margin-top: 20px;
+   padding-top: 10px;
+   padding-left: 60px;
+   font-size: 3rem;
+   color: #d9bba9;
+
+   font-family: 'Satisfy', cursive;
+
+
+ }
+
+ .change:after{
+  content: '';
+  animation: changetext 5s infinite linear ;
+  font-size: 4rem;
+ }
+
+ @keyframes changetext{
+   0% { content:"Hello!"; }
+  40% { content:"I'm Niharika Dinesh"; }
+
+ }
+
+
+
+
+ a{
+
+
+   position: relative;
+   display: inline-block;
+  padding: 20px 40px;
+   color: #b6cec7;
+   font-family: 'Cinzel', serif;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   text-decoration: none;
+   font-size: 24px;
+   overflow: hidden;
+   transition: 0.2s;
+ }
+
+
+ a:hover{
+   color: #b6cec7;
+   box-shadow: 0 0 10px #b6cec7,0 0 40px #b6cec7,0 0 80px #b6cec7;
+   transition-delay: 1s;
+   background: #621940;
+ }
+
+
+ a span{
+   position: absolute;
+   display: block;
+ }
+
+ a span:nth-child(1){
+   top:0;
+   left:-100%;
+   width: 100%;
+   height: 2px;
+   background: linear-gradient(90deg,transparent,#b6cec7);
+   }
+
+   a:hover span:nth-child(2){
+     left:100%;
+     transition: 1s;
+
+   }
+
+   a span:nth-child(3){
+     bottom:0;
+     right:-100%;
+     width: 100%;
+     height: 2px;
+     background: linear-gradient(270deg,transparent,#b6cec7);
+     }
+
+     a:hover span:nth-child(3){
+       right:100%;
+       transition: 1s;
+       transition-delay: 0.5s;
+     }
+
+     a span:nth-child(2){
+       top:-100%;
+       right:0;
+       width: 2px;
+       height: 100%;
+       background: linear-gradient(180deg,transparent,#b6cec7);
+       }
+
+       a:hover span:nth-child(2){
+         top:100%;
+         transition: 1s;
+         transition-delay: 0.25s;
+       }
+
+       a span:nth-child(4){
+         left: 0;
+         bottom:-100%;
+         width: 2px;
+         height: 100%;
+         background: linear-gradient(360deg,transparent,#b6cec7);
+         }
+
+         a:hover span:nth-child(4){
+           bottom: 100%;
+           transition: 1s;
+           transition-delay: 0.75s;
+         }
