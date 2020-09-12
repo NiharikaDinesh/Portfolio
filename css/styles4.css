@@ -1,8 +1,13 @@
+html{
+  height: 100%;
+}
 body{
   background: linear-gradient(360deg, #4f3558 0%, #d9bba9 35%, #b6cec7 100%);
 }
 
-
+header{
+  z-index: 0;
+}
 .nav-item{
   padding: 10px 10px;
   font-size: 20px;
@@ -16,6 +21,7 @@ body{
 h1{
   margin-left: 100px;
   color: #4f3558;
+  margin-top: 50px;
   font-family: 'Satisfy', cursive;
 }
 
@@ -32,7 +38,9 @@ h1{
   background-color: #4f3558;
 }
 .container{
+  z-index: 1;
   margin-bottom: 10px;
+  margin-left: 0;
 
 }
 span{
